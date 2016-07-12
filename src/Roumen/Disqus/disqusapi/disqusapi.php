@@ -133,7 +133,8 @@ class DisqusResource {
             throw new DisqusAPIError($data->code, $data->response);
         }
 
-        return $data->response;
+	return $data;
+        //return $data->response;
     }
 }
 
